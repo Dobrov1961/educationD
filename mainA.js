@@ -1,12 +1,13 @@
 function getRandomColor() {
-    let result = Math.floor(Math.random() * 999999);
-    let finish = '#'+result;
-    console.log(finish);
-    return result;
-    document.body.style.backgroundColor = finish;
+    let randomNumber = Math.floor(Math.random() * 999999);
+    let colorNumber = '#'+randomNumber;
+    console.log(colorNumber);
+    return colorNumber;
 }
-
-document.getElementById("changeColor").addEventListener('click', getRandomColor);
+function changeColor(){
+    document.body.style.backgroundColor = 'colorNumber';
+}
+document.getElementById("changeColor").addEventListener('click', changeColor);
 
 
 
