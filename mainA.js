@@ -1,6 +1,7 @@
 document.getElementById("changeColor").addEventListener('click', function () {
-    document.body.style.backgroundColor = randomNumber;
-    return randomNumber = '#'+Math.floor(Math.random() * 999999);
+    let randomNumber = Math.floor(Math.random() * 999999);
+    let colorNumber = '#'+randomNumber;
+    document.body.style.backgroundColor = colorNumber;
 });
 
 
